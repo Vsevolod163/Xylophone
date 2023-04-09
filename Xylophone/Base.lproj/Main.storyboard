@@ -19,7 +19,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fMn-u2-fHm">
                                 <rect key="frame" x="0.0" y="59" width="430" height="819"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="set-Y1-mkT">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="set-Y1-mkT" userLabel="C">
                                         <rect key="frame" x="20" y="0.0" width="390" height="110"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9d-4F-9Es">
@@ -28,6 +28,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="C">
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cz4-52-4T6"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
@@ -38,7 +41,7 @@
                                             <constraint firstItem="o9d-4F-9Es" firstAttribute="top" secondItem="set-Y1-mkT" secondAttribute="top" id="vGY-gO-Onq"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PXM-vf-OXP">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PXM-vf-OXP" userLabel="D">
                                         <rect key="frame" x="30" y="118" width="370" height="110.33333333333331"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E64-cG-HdQ">
@@ -57,7 +60,7 @@
                                             <constraint firstAttribute="bottom" secondItem="E64-cG-HdQ" secondAttribute="bottom" id="h8S-nt-smn"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jrA-Zz-5ge">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jrA-Zz-5ge" userLabel="E">
                                         <rect key="frame" x="40" y="236.33333333333331" width="350" height="110"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hdz-Sf-whn">
@@ -76,7 +79,7 @@
                                             <constraint firstItem="Hdz-Sf-whn" firstAttribute="leading" secondItem="jrA-Zz-5ge" secondAttribute="leading" id="wbB-FK-t1E"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mZb-cK-xT3">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mZb-cK-xT3" userLabel="F">
                                         <rect key="frame" x="50" y="354.33333333333331" width="330" height="110.33333333333331"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TU6-3U-vod">
@@ -95,7 +98,7 @@
                                             <constraint firstItem="TU6-3U-vod" firstAttribute="top" secondItem="mZb-cK-xT3" secondAttribute="top" id="UxT-iE-IfC"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u5g-5p-Rmr">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u5g-5p-Rmr" userLabel="G">
                                         <rect key="frame" x="60" y="472.66666666666663" width="310" height="110"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEh-Qe-qUc">
@@ -114,7 +117,7 @@
                                             <constraint firstAttribute="trailing" secondItem="fEh-Qe-qUc" secondAttribute="trailing" id="xxh-3z-wUh"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DW9-9Q-UD2">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DW9-9Q-UD2" userLabel="A">
                                         <rect key="frame" x="70" y="590.66666666666663" width="290" height="110.33333333333337"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HFk-eW-my0">
@@ -133,7 +136,7 @@
                                             <constraint firstItem="HFk-eW-my0" firstAttribute="top" secondItem="DW9-9Q-UD2" secondAttribute="top" id="pkp-xP-qqJ"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EB4-dd-6ZU">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EB4-dd-6ZU" userLabel="B">
                                         <rect key="frame" x="80" y="709" width="270" height="110"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gkb-H2-yIz">
@@ -180,6 +183,15 @@
                             <constraint firstItem="fMn-u2-fHm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="s6N-NJ-tJt"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="soundViews" destination="set-Y1-mkT" collectionClass="NSMutableArray" id="7JY-nk-fFf"/>
+                        <outletCollection property="soundViews" destination="PXM-vf-OXP" collectionClass="NSMutableArray" id="kH0-Aw-hJQ"/>
+                        <outletCollection property="soundViews" destination="jrA-Zz-5ge" collectionClass="NSMutableArray" id="INh-MR-q3t"/>
+                        <outletCollection property="soundViews" destination="mZb-cK-xT3" collectionClass="NSMutableArray" id="OZL-zX-egJ"/>
+                        <outletCollection property="soundViews" destination="u5g-5p-Rmr" collectionClass="NSMutableArray" id="PoV-Id-6AQ"/>
+                        <outletCollection property="soundViews" destination="DW9-9Q-UD2" collectionClass="NSMutableArray" id="c9j-Mc-iJ7"/>
+                        <outletCollection property="soundViews" destination="EB4-dd-6ZU" collectionClass="NSMutableArray" id="PZ9-bo-cz8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
